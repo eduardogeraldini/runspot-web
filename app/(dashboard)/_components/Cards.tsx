@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import React from "react";
+
 import { Container } from "./Container";
 import {
   Card,
@@ -103,7 +104,7 @@ export const Cards = () => {
 
       <div className="mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="grid items-center gap-1.5">
-          <Label htmlFor="titulo">Título</Label>
+          <Label htmlFor="titulo">Descrição</Label>
           <Input id="titulo" placeholder="Corrida 5k" />
         </div>
 
@@ -111,7 +112,7 @@ export const Cards = () => {
           <Label htmlFor="cidade">Cidade</Label>
           <Select>
             <SelectTrigger>
-              <SelectValue placeholder="Select a timezone" />
+              <SelectValue placeholder="Selecione a cidade" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -126,13 +127,13 @@ export const Cards = () => {
           </Select>
         </div>
 
-        <div className="grid items-center gap-1.5">
+        <div className="grid items-center gap-1.5 relative z-[99999]">
           <Label htmlFor="cidade">Estado</Label>
           <Select>
-            <SelectTrigger className="">
+            <SelectTrigger>
               <SelectValue placeholder="Select a timezone" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white">
               <SelectGroup>
                 <SelectItem value="est">Eastern Standard Time (EST)</SelectItem>
                 <SelectItem value="cst">Central Standard Time (CST)</SelectItem>

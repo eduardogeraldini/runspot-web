@@ -36,9 +36,9 @@ export const Navbar = () => {
         <div className="flex justify-center items-center gap-6">
           <ThemeChanger />
 
-          <Link href="/" className="px-12 py-2 text-white bg-indigo-600 rounded-md">
+          {/* <Link href="/" className="px-12 py-2 text-white bg-indigo-600 rounded-md">
             Entrar
-          </Link>
+          </Link> */}
         </div>
 
         {/* menu  */}
